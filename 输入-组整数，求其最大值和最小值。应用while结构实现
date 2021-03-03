@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+int a,max,min;
+printf("请输入一组整数:");
+scanf("%d",&a);
+max=min=a;
+while(a>0)
+{
+if(a>max)
+max=a;
+else if(a<min)
+min=a;
+scanf("%d",&a);
+}
+printf("%5d%5d",max,min);
+return 0;
+}
